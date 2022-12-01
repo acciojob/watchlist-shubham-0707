@@ -92,6 +92,8 @@ public class MovieRepository {
                 }
             }
         }
+        director_map.clear();
+        movie_director_map.clear();
     }
 
 }
