@@ -61,9 +61,9 @@ public class MovieRepository {
         return movies;
     }
 
-    public List<Movie> getAllMoviesAddedFromDB(){
-        List<Movie> ans = new ArrayList<>();
-        for(Movie m : movie_map.values()){
+    public List<String> getAllMoviesAddedFromDB(){
+        List<String> ans = new ArrayList<>();
+        for(String m : movie_map.keySet()){
             ans.add(m);
         }
         return ans;

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+
 @Service
 public class MovieService {
     @Autowired
@@ -37,7 +37,8 @@ public class MovieService {
         return movieRepository.getListOfMoviesOfADirector(director_name);
     }
 
-    public List<Movie> getListOfAllMoviesService(){
+    public List<String> getListOfAllMoviesService(){
+
         return movieRepository.getAllMoviesAddedFromDB();
     }
 
